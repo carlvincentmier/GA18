@@ -1,4 +1,13 @@
-<form method="GET" action="save.php">
-<input name="email">
-</form>
-$email = $_POST['email'];
+<?php
+// MALI: gamit ang $_POST kahit ang form method ay GET
+// $email = $_POST['email'];
+
+ // TAMA: gamitin ang $_GET dahil ang form method ay GET
+$email = $_GET['email'];
+
+/*
+pinalitan ko yung $_POST → $_GET kasi ang form ay gumagamit ng method="GET". 
+kung $_POST ang gagamitin, undefined index ang lalabas dahil walang POST data na nade-deliver. 
+ngayon, tama na ang pagkuha ng email mula sa form.
+*/
+?>
