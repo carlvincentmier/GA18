@@ -1,0 +1,4 @@
+<form method="GET" action="save.php">
+<input name="email">
+</form>
+$email = $_POST['email'];
